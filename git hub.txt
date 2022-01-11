@@ -1,5 +1,0 @@
-wysyłanie zadania do repo
-
-git add . (dodaje wszystkie pliki)
-git commit -m "nazwa" (commit)
-git push (wrzuca plik do repo)
