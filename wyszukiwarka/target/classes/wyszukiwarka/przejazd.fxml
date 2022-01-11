@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="wyszukiwarka.Controller.PrzejazdController">
+    <children>
+        <TableView fx:id="rozpiskaTableView" prefHeight="149.0">
+            <columns>
+                <TableColumn fx:id="nazwa" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Nazwa trasy"/>
+                <TableColumn fx:id="numer" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Numer pociągu"/>
+                <TableColumn fx:id="stacjaPoczatek" maxWidth="150.0" minWidth="150.0" prefWidth="150.0"
+                             text="Stacja początkowa"/>
+                <TableColumn fx:id="stacjaKoniec" maxWidth="150.0" minWidth="150.0" prefWidth="150.0"
+                             text="Stacja końcowa"/>
+                <TableColumn fx:id="dataOdjazdu" maxWidth="150.0" minWidth="150.0" prefWidth="150.0"
+                             text="Data odjazdu"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

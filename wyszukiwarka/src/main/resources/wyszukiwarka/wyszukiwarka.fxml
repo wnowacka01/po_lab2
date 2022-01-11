@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="350.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="wyszukiwarka.Controller.WyszukiwarkaController">
+    <children>
+        <VBox prefHeight="350.0" prefWidth="450.0" style="-fx-alignment: center;">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stacja początkowa">
+                            <HBox.margin>
+                                <Insets left="20.0" right="20.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <TextField fx:id="stacjaPoczatkowa" prefWidth="300.0">
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stacja końcowa">
+                            <HBox.margin>
+                                <Insets left="20.0" right="35.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <TextField fx:id="stacjaKoncowa" prefWidth="300.0">
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data">
+                            <HBox.margin>
+                                <Insets left="20.0" right="90.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <DatePicker fx:id="data" prefWidth="300.0">
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                        </DatePicker>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Godzina odjazdu">
+                            <HBox.margin>
+                                <Insets left="20.0" right="25.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <ComboBox fx:id="godzina" prefWidth="150.0">
+                            <HBox.margin>
+                                <Insets right="10.0"/>
+                            </HBox.margin>
+                        </ComboBox>
+                        <ComboBox fx:id="minuta" prefWidth="150.0">
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                        </ComboBox>
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center;">
+                    <children>
+                        <Button fx:id="wyczysc" mnemonicParsing="false" onAction="#wyczysc" text="Wyczyść">
+                            <HBox.margin>
+                                <Insets right="20.0"/>
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="szukaj" mnemonicParsing="false" onAction="#szukaj" text="Wyszukaj"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
